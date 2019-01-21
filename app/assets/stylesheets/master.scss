@@ -17,6 +17,12 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.navbar-inverse .navbar-brand {
+  color: #669DB0;
+  font-family: rubric, sans-serif;
+  font-size:26px;
+}
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
