@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
+# Need to authenticate and credential users
+gem 'devise'
 # All this just for an icon
 gem "font-awesome-rails"
 # This puts special forms formatting into pages for the web application
