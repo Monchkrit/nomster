@@ -3,6 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
+# This puts special forms formatting into pages for the web application
+gem 'simple_form'
+# Gem for putting pages of items into the application
+gem 'will_paginate', '~> 3.1.1'
+# The Bootstrap gem to help with pagination
+gem 'will_paginate-bootstrap'
+
 gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
