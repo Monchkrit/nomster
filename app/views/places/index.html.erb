@@ -1,5 +1,4 @@
 <% @places.each do |place| %>
-<%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 
 <!-- or custom pagination -->
 
@@ -11,3 +10,4 @@
   </div>
 
 <% end %>
+<%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
