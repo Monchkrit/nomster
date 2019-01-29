@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
+# This gem allows injection of private keys and credentials when deploying to production.
+# It keeps from having to put these hardcoded into the application.
+gem "figaro"
+# Getting access to Google Maps and the geocoding
+gem "geocoder"
 # Need to authenticate and credential users
 gem 'devise'
 # All this just for an icon
