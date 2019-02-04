@@ -84,3 +84,8 @@
   </div>
 <% end %>
 </div>
+<div class="clear"></div>
+<%= simple_form_for @picture, url: '#' do |f| %>
+  <%= f.input :caption %>
+  <%= f.submit "Add a Picture", class: 'btn btn-primary' %>
+<% end %>
