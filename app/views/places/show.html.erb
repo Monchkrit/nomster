@@ -3,9 +3,7 @@
 <i><%= @place.address %></i>
 <br/><br/>
 <p><%= @place.description %></p>
-</head>
-  <body>
-    <div id="map"></div>
+
   <% if @place.latitude.present? && @place.longitude.present? %>
     <script>
 
@@ -60,6 +58,8 @@
       <% end %>
     </div>
   </div>
+  <div class="clear"></div>
+
 </div>
 
 <div class="col-10 offset-1">
@@ -85,7 +85,14 @@
 <% end %>
 </div>
 <div class="clear"></div>
-<%= simple_form_for @picture, url: '#' do |f| %>
-  <%= f.input :caption %>
-  <%= f.submit "Add a Picture", class: 'btn btn-primary' %>
-<% end %>
+  <%= simple_form_for @picture, url: place_pictures_path(@place) do |f| %>
+    <%= f.input :image %>
+    <%= f.input :caption %>
+    <%= f.submit "Add a Picture", class: 'btn btn-primary' %>
+  <% end %>
+<div class='booyah-box col-10 offset-1'>
+  <%= @place.pictures.each do |picture| %>
+    <%= image_tag picture.image.url %>
+    <%= picture.caption %>
+  <% end %>
+</div>

@@ -82,3 +82,6 @@ gem 'bootstrap', '4.0.0.alpha6'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+# This gem is used to provide a file picker to add files to the database and display
+# the images on the web page.
+gem 'carrierwave', '~> 1.0'
