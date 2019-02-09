@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
+# This gem puts Amazon Web Services functionality into my web app
+gem "fog-aws"
 # This gem allows injection of private keys and credentials when deploying to production.
 # It keeps from having to put these hardcoded into the application.
 gem "figaro"
