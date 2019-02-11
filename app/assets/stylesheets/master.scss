@@ -20,7 +20,9 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
   box-shadow: 0px 1px 3px #2a2a2a;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-bottom: 0;
 }
+
 #map {
         height: 300px;
       }
@@ -28,7 +30,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-inverse .navbar-brand {
   color: #669DB0;
   font-family: rubric, sans-serif;
-  font-size:26px;
+  font-size: 24;
+  margin-bottom: 0;
 }
 
 .booyah-box {
@@ -41,6 +44,26 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  width: 100%;
+}
+
+.carousel-caption {
+  font-family: rubric, sans-serif;
+  font-size: 60em;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
 
 .pagination {
