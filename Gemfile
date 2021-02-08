@@ -86,4 +86,4 @@ source 'https://rails-assets.org' do
 end
 # This gem is used to provide a file picker to add files to the database and display
 # the images on the web page.
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
